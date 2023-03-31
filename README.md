@@ -20,3 +20,11 @@ section shows user profiles.
 reusable component creation, and clean code. We chose to use the MVC structure for the project, allowing us to apply some of our knowledge in 
 Object-Oriented Programming. We also used the git devAzure version control system and experimented with agile methods such as Scrum and Kanban. To better 
 organize the project, we created stories and tasks.
+
+- FIGMA SCREENS:
+
+<img width="908" alt="image" src="https://user-images.githubusercontent.com/99150709/229002849-9157145d-7890-4607-a267-1bfbf388450c.png">
+<img width="294" alt="image" src="https://user-images.githubusercontent.com/99150709/229002924-572d248d-09e0-4fd6-ab0b-ccf83e2157ae.png">
+
+- ERRORS SCREENS:
+<img width="990" alt="image" src="https://user-images.githubusercontent.com/99150709/229002980-8b7be749-37e8-4cb9-8405-02ac815de0ad.png">
