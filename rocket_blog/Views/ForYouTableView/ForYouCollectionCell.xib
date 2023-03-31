@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="forYouIdCell" id="HIj-6P-GJT" customClass="ForYouCollectionCell" customModule="rocket_blog" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="293" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="293" height="248"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1TE-7c-kUL" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="293" height="250"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hzl-mc-pKp">
+                                <rect key="frame" x="16" y="5" width="233" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="233" id="5yO-r6-CPB"/>
+                                    <constraint firstAttribute="height" constant="160" id="Vie-s7-g8B"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uma lista honesta de erros comuns no UX" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgL-r5-ev8">
+                                <rect key="frame" x="16" y="173" width="277" height="40.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40.670000000000002" id="SkE-Wz-Iaf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4H8-r0-3uP">
+                                <rect key="frame" x="16" y="218.66666666666666" width="266" height="26"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zJi-rP-DPa">
+                                        <rect key="frame" x="0.0" y="1.6666666666666661" width="26" height="23.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="2XX-Gb-NUZ"/>
+                                            <constraint firstAttribute="height" constant="26" id="zoj-pg-DRQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vivian Xalita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeA-FP-MUw">
+                                        <rect key="frame" x="34" y="0.0" width="232" height="26"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="bbH-RC-FCX"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hzl-mc-pKp" secondAttribute="trailing" id="3kn-5d-xC7"/>
+                            <constraint firstItem="4H8-r0-3uP" firstAttribute="leading" secondItem="1TE-7c-kUL" secondAttribute="leading" constant="16" id="4RI-kG-OM1"/>
+                            <constraint firstAttribute="trailing" secondItem="RgL-r5-ev8" secondAttribute="trailing" id="AGE-Ym-Ydl"/>
+                            <constraint firstAttribute="trailing" secondItem="4H8-r0-3uP" secondAttribute="trailing" constant="11" id="FUN-Bh-F9B"/>
+                            <constraint firstItem="hzl-mc-pKp" firstAttribute="top" secondItem="1TE-7c-kUL" secondAttribute="top" constant="5" id="GQS-Fc-bTw"/>
+                            <constraint firstItem="RgL-r5-ev8" firstAttribute="top" secondItem="hzl-mc-pKp" secondAttribute="bottom" constant="8" id="PJ8-mZ-pPe"/>
+                            <constraint firstItem="RgL-r5-ev8" firstAttribute="leading" secondItem="1TE-7c-kUL" secondAttribute="leading" constant="16" id="Pdc-4v-Gsw"/>
+                            <constraint firstItem="4H8-r0-3uP" firstAttribute="top" secondItem="RgL-r5-ev8" secondAttribute="bottom" constant="5" id="W9I-Rr-8k5"/>
+                            <constraint firstAttribute="height" constant="250" id="gKV-Mc-j84"/>
+                            <constraint firstItem="hzl-mc-pKp" firstAttribute="leading" secondItem="1TE-7c-kUL" secondAttribute="leading" constant="16" id="wbx-ue-O2r"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="gxW-mz-IXP"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1TE-7c-kUL" secondAttribute="bottom" id="7Xh-ag-Ktc"/>
+                <constraint firstItem="1TE-7c-kUL" firstAttribute="top" secondItem="HIj-6P-GJT" secondAttribute="top" id="Mme-2Y-9EX"/>
+                <constraint firstAttribute="trailing" secondItem="1TE-7c-kUL" secondAttribute="trailing" id="N0u-Nc-oiS"/>
+                <constraint firstItem="1TE-7c-kUL" firstAttribute="leading" secondItem="HIj-6P-GJT" secondAttribute="leading" id="qmM-Yi-5RE"/>
+            </constraints>
+            <size key="customSize" width="293" height="248"/>
+            <connections>
+                <outlet property="authorImage" destination="zJi-rP-DPa" id="mRf-iv-Jr8"/>
+                <outlet property="authorName" destination="YeA-FP-MUw" id="hPD-u2-g4h"/>
+                <outlet property="imageCollection" destination="hzl-mc-pKp" id="BPZ-ef-Fct"/>
+                <outlet property="postDescriptionTitle" destination="RgL-r5-ev8" id="DC9-Fu-xly"/>
+            </connections>
+            <point key="canvasLocation" x="231.53846153846152" y="120.85308056872037"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="DefaultBackground" width="0.3333333432674408" height="0.3333333432674408"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
